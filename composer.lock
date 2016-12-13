@@ -1,0 +1,73 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f1683e3217c8613e35dfb204cb71e2b3",
+    "content-hash": "d6040a2bdecc2f0f55eb0e4c7ecb9b3e",
+    "packages": [
+        {
+            "name": "jamm/memory",
+            "version": "1.0.x-dev",
+            "target-dir": "Jamm/Memory",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamm/Memory.git",
+                "reference": "ab41b277cfb7c2c63e59ea438196e9cabf853482"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamm/Memory/zipball/ab41b277cfb7c2c63e59ea438196e9cabf853482",
+                "reference": "ab41b277cfb7c2c63e59ea438196e9cabf853482",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "jamm/tester": "allows to run unit-tests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Jamm\\Memory": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eugene OZ",
+                    "email": "normandiggs@gmail.com",
+                    "homepage": "https://github.com/jamm/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Key-value storage in memory. As a storage can be used: APC, Redis, Memcache, Shared memory. All storage objects have one interface, so you can switch them without changing the working code. Contains PHP Redis client.",
+            "keywords": [
+                "apc",
+                "caching",
+                "dog-pile",
+                "memcached",
+                "memory",
+                "race-condition",
+                "redis",
+                "shared memory"
+            ],
+            "time": "2013-01-21 22:34:09"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.0"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,24 @@
+{
+    "name": "dmkit/php-fork-manager",
+    "description": "Simple class to fork and manage processes in PHP and allow multitasking or multiprocessing",
+    "phpmu": ["fork","process","pcntl","multiprocessing", "multitasking"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dan Bangayan",
+            "email": "danny.bangayan@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "jamm/memory": "^1.0"
+    },
+    "suggest": {
+        "ext-pcntl": "PCNTL functions are required"
+    },
+    "autoload": {
+        "psr-4": { "Dmkit\\Php\\Fork\\": "src/Php/Fork/" }
+    }
+}
