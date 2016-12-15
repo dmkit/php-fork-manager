@@ -2,17 +2,40 @@
 
 namespace Dmkit\Php\Fork\Worker\Message;
 
-use Dmkit\Php\Fork\Worker\Message\Adapter;
+use Dmkit\Php\Fork\Worker\Message\AdapterInterface;
+use Dmkit\Php\Fork\Worker\Message\ShmopHandler;
 
 /**
  * Dmkit\Php\Fork\Worker\Message\Message.
  */
-class Message extends Adapter
+class Message implements AdapterInterface
 {
-	public function __construct($message, $worker)
+	public static $shmopSize = 1000;
+
+	protected $key;
+
+	protected $shmopObj;
+
+	public function __construct()
 	{
-		$this->set($message);
-		$this->setInvoker($worker);
+		$this->key = round( microtime(true) * rand(500,1000) );
+
+		$this->shmopObj = new ShmopHandler($this->key, self::$shmopSize);
 	}
 
+	public function set($msg)
+	{
+		$msg = serialize($msg);
+		return $this->shmopObj->write($msg);
+	}
+
+	public function get()
+	{
+		return unserialize( $this->shmopObj->read() );
+	}
+
+	public function remove()
+	{
+		$this->shmopObj->delete();
+	}
 }

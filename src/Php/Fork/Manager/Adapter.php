@@ -2,8 +2,6 @@
 
 namespace Dmkit\Php\Fork\Manager;
 
-use Dmkit\Php\Fork\Worker\AdapterInterface as Worker;
-
 /**
  * Dmkit\Php\Fork\Manager\Adapter.
  */
@@ -23,7 +21,7 @@ abstract class Adapter
         }
     }
 
-    public function addWorker(Worker $worker) {
+    public function addWorker(callable $worker) {
         $this->workers[] = $worker;
     }
 

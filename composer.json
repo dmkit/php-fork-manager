@@ -13,10 +13,11 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "jamm/memory": "^1.0"
+        "anime-db/shmop": "^1.0"
     },
     "suggest": {
-        "ext-pcntl": "PCNTL functions are required"
+        "ext-pcntl": "PCNTL extension is required",
+        "ext-shmop": "SHMOP extension is required"
     },
     "autoload": {
         "psr-4": { "Dmkit\\Php\\Fork\\": "src/Php/Fork/" }

@@ -4,34 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f1683e3217c8613e35dfb204cb71e2b3",
-    "content-hash": "d6040a2bdecc2f0f55eb0e4c7ecb9b3e",
+    "hash": "a8ecf5d78a45f884f0884242428e3128",
+    "content-hash": "7b8828d92842e37bb24dc90ab40720ee",
     "packages": [
         {
-            "name": "jamm/memory",
-            "version": "1.0.x-dev",
-            "target-dir": "Jamm/Memory",
+            "name": "anime-db/shmop",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jamm/Memory.git",
-                "reference": "ab41b277cfb7c2c63e59ea438196e9cabf853482"
+                "url": "https://github.com/anime-db/shmop.git",
+                "reference": "0d08a6b50091c44a47f3426c51ffa6b6834bb780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamm/Memory/zipball/ab41b277cfb7c2c63e59ea438196e9cabf853482",
-                "reference": "ab41b277cfb7c2c63e59ea438196e9cabf853482",
+                "url": "https://api.github.com/repos/anime-db/shmop/zipball/0d08a6b50091c44a47f3426c51ffa6b6834bb780",
+                "reference": "0d08a6b50091c44a47f3426c51ffa6b6834bb780",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "jamm/tester": "allows to run unit-tests"
+                "ext-shmop": "*",
+                "php": ">=5.0"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Jamm\\Memory": ""
+                "psr-4": {
+                    "AnimeDb\\Shmop\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -40,24 +37,17 @@
             ],
             "authors": [
                 {
-                    "name": "Eugene OZ",
-                    "email": "normandiggs@gmail.com",
-                    "homepage": "https://github.com/jamm/",
-                    "role": "Developer"
+                    "name": "Peter Gribanov",
+                    "email": "info@peter-gribanov.ru"
                 }
             ],
-            "description": "Key-value storage in memory. As a storage can be used: APC, Redis, Memcache, Shared memory. All storage objects have one interface, so you can switch them without changing the working code. Contains PHP Redis client.",
+            "description": "Shmop is a simple and small abstraction layer for shared memory manipulation using PHP",
+            "homepage": "http://github.com/anime-db/shmop",
             "keywords": [
-                "apc",
-                "caching",
-                "dog-pile",
-                "memcached",
-                "memory",
-                "race-condition",
-                "redis",
-                "shared memory"
+                "php",
+                "shmop"
             ],
-            "time": "2013-01-21 22:34:09"
+            "time": "2016-06-03 14:45:15"
         }
     ],
     "packages-dev": [],
