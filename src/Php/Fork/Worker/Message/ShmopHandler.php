@@ -10,7 +10,7 @@ use AnimeDb\Shmop\FixedBlock;
 class ShmopHandler extends FixedBlock
 {
 	/**
-	 * Add our own close method to manually call it.
+	 * Add our own close method and manually call it.
 	 */
 	public function close()
 	{
@@ -18,7 +18,7 @@ class ShmopHandler extends FixedBlock
 	}
 
 	/**
-	 * override the parent method
+	 * Override the parent method
 	 * Need to keep the memory block open for the parent process
 	 */ 
 	public function __destruct()

@@ -25,13 +25,6 @@ abstract class Adapter
         $this->workers[] = $worker;
     }
 
-    protected function waitWorkers() 
-    {
-    	foreach($this->pids as $pid) {
-            pcntl_waitpid($pid, $status);
-        }
-    }
-
     abstract public function dispatch();
 
 }

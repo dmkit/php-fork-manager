@@ -22,10 +22,7 @@ class MessageTest extends TestCase
 		$this->assertEquals($data, $msg->get());
 		$this->assertEquals($data2, $msg2->get());
 
-		$msg->remove();
-		$msg2->remove();
-
-		$this->assertTrue( !$msg->get() );
-		$this->assertTrue( !$msg2->get() );
+		$this->assertTrue( $msg->remove() );
+		$this->assertTrue( $msg2->remove() );
 	}
 }

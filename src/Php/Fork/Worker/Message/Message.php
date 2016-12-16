@@ -12,7 +12,7 @@ class Message implements AdapterInterface
 {
 	public static $shmopSize = 1000;
 
-	protected $key;
+	public $key;
 
 	protected $shmopObj;
 
@@ -36,6 +36,9 @@ class Message implements AdapterInterface
 
 	public function remove()
 	{
-		$this->shmopObj->delete();
+		$deleted = $this->shmopObj->delete();
+		$this->shmopObj->close();
+
+		return $deleted;
 	}
 }
