@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-use Dmkit\Php\Fork\Manager\Manager;
+use Dmkit\Fork\Manager\Manager;
 
 class ManagerTest extends TestCase
 {

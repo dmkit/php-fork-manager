@@ -1,12 +1,12 @@
 <?php
 
-namespace Dmkit\Php\Fork\Worker\Message;
+namespace Dmkit\Fork\Worker\Message;
 
-use Dmkit\Php\Fork\Worker\Message\AdapterInterface;
-use Dmkit\Php\Fork\Worker\Message\ShmopHandler;
+use Dmkit\Fork\Worker\Message\AdapterInterface;
+use Dmkit\Fork\Worker\Message\ShmopHandler;
 
 /**
- * Dmkit\Php\Fork\Worker\Message\Message.
+ * Dmkit\Fork\Worker\Message\Message.
  */
 class Message implements AdapterInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dmkit\Php\Fork\Manager;
+namespace Dmkit\Fork\Manager;
 
 /**
- * Dmkit\Php\Fork\Manager\Adapter.
+ * Dmkit\Fork\Manager\Adapter.
  */
 abstract class Adapter 
 {

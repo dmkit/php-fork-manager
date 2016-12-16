@@ -1,9 +1,9 @@
 <?php
 
-namespace Dmkit\Php\Fork\Worker\Message;
+namespace Dmkit\Fork\Worker\Message;
 
 /**
- * Dmkit\Php\Fork\Worker\Message\AdapterInterface.
+ * Dmkit\Fork\Worker\Message\AdapterInterface.
  */
 interface AdapterInterface
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Dmkit\Php\Fork\Manager;
+namespace Dmkit\Fork\Manager;
 
-use Dmkit\Php\Fork\Manager\Adapter;
-use Dmkit\Php\Fork\Worker\Message\Message;
+use Dmkit\Fork\Manager\Adapter;
+use Dmkit\Fork\Worker\Message\Message;
 
 /**
- * Dmkit\Php\Fork\Manager\Manager.
+ * Dmkit\Fork\Manager\Manager.
  */
 class Manager extends Adapter
 {

@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-use Dmkit\Php\Fork\Worker\Message\Message;
+use Dmkit\Fork\Worker\Message\Message;
 
 class MessageTest extends TestCase
 {

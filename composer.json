@@ -20,6 +20,6 @@
         "ext-shmop": "SHMOP extension is required"
     },
     "autoload": {
-        "psr-4": { "Dmkit\\Php\\Fork\\": "src/Php/Fork/" }
+        "psr-4": { "Dmkit\\Fork\\": "src/Fork/" }
     }
 }

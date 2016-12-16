@@ -1,11 +1,11 @@
 <?php
 
-namespace Dmkit\Php\Fork\Worker\Message;
+namespace Dmkit\Fork\Worker\Message;
 
 use AnimeDb\Shmop\FixedBlock;
 
 /**
- * Dmkit\Php\Fork\Worker\Message\ShmopHandler.
+ * Dmkit\Fork\Worker\Message\ShmopHandler.
  */
 class ShmopHandler extends FixedBlock
 {
