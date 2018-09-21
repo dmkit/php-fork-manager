@@ -2,6 +2,8 @@
 
 A simple class to fork processes and handle multitasking tasks.
 
+NOTE: I would suggest not to use PHP in forking processes or handling such a case. But if you are like me who were required to use PHP for some reason then feel free to use this.
+
 ## Installation
 ```
 composer require dmkit/php-fork-manager
